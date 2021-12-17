@@ -10,7 +10,7 @@
 }
 body {
   background: #eee url("../public/blob-scene-haikei.svg") center center
-    no-repeat !important;
+    no-repeat;
   background-size: 100% auto;
   height: 100vh;
 }
