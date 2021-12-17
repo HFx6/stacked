@@ -1,0 +1,273 @@
+@font-face {
+  font-family: "circbold";
+  src: local("MyFont"),
+    url("../public/fonts/circularbold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "circblack";
+  src: local("MyFont"),
+    url("../public/fonts/circularblack.ttf") format("truetype");
+}
+body {
+  background: #eee url("../public/blob-scene-haikei.svg") center center
+    no-repeat !important;
+  background-size: 100% auto;
+  height: 100vh;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  color: #4f4f4f;
+}
+.flex-container > div {
+  background-color: #F6FAFD;
+  margin: 30px;
+  /* text-align: center; */
+  font-size: 1.2rem;
+  box-shadow: 0px 0px 23px -3px #0000001a;
+}
+
+.block25,
+.block70 {
+  border-radius: 4px;
+  font-family: "circbold";
+}
+
+.block25 {
+  width: 19.5%;
+  max-width: 509px;
+  padding: 9px 16px 9px 16px;
+  text-align: center;
+}
+.block70 {
+  width: 70%;
+  max-width: 1080px;
+  height: calc(100vh - 300px);
+  padding: 0px 20px 20px 20px;
+  overflow: hidden;
+}
+/* .gg-swap {
+  --ggs: 1.5;
+} */
+.logopf {
+  width: 30px !important;
+}
+
+.logopf > a {
+  padding: 0px;
+}
+
+.label {
+  color: #4f4f4f;
+  font-size: 24px;
+  margin: 20px 0px 12px 0px;
+  font-family: "circblack";
+}
+#totalSumNow {
+  margin: 0 !important;
+  font-size: 30px;
+}
+.sublabel {
+  color: #bababa;
+  font-size: 14px;
+  margin: 0;
+}
+
+.apexcharts-xaxis-label {
+  display: none;
+}
+.apexcharts-xaxis-label:nth-child(3n) {
+  display: revert;
+}
+.loading {
+  display: block;
+  text-align: center;
+}
+.toolbar > button {
+  background-color: #f8b7c7;
+  border-radius: 3px;
+  padding: 6px 11px 6px 11px;
+  border: 0;
+  cursor: pointer;
+  color: #f2718d;
+  font-size: 11px;
+  font-family: "circbold";
+  margin: 0px 5px 0px 5px;
+}
+.toolbar {
+  display: flex;
+  justify-content: center;
+}
+.chart {
+  margin-top: 4px;
+}
+#totalSumNow {
+  float: left;
+}
+.downpercent {
+  background-color: #f9d8e2;
+  padding: 30px;
+  float: right;
+  padding: 9px 8px 9px 8px;
+  border-radius: 6px;
+  color: #623c30;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+.uppercent {
+  background-color: #e2f9d8;
+  padding: 30px;
+  float: right;
+  padding: 9px 8px 9px 8px;
+  border-radius: 6px;
+  color: #30623c;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+.uppercent > p,
+.downpercent > p {
+  margin: 0;
+}
+.total {
+  display: flow-root;
+}
+#chart {
+  width: 65%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.gg-arrow-up,
+.gg-arrow-down {
+  float: right;
+}
+
+#benchname {
+  float: left;
+  margin: 0;
+}
+#recent > p:first-child {
+  margin: 0;
+}
+
+.seekactive {
+  background-color: #f2708d !important;
+  color: #f8b7c7 !important;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: color 200ms linear;
+}
+
+#holdings {
+  overflow-y: auto;
+  height: 60%;
+}
+#recent {
+  overflow-y: auto;
+  height: 54%;
+}
+
+@media screen and (max-height: 1440px) {
+  #recent {
+    overflow-y: auto;
+    height: 57%;
+  }
+  .block70{
+    height: calc(100vh - 337px);
+  }
+}
+
+@media screen and (max-height: 1080px) {
+  #recent {
+    overflow-y: auto;
+    height: 38%;
+  }
+  #holdings{
+    overflow: scroll;
+    height: 49%;
+  }
+  .block25{
+    width: 20.5%;
+  }
+}
+
+@media screen and (max-height: 720px) {
+  .block70 {
+    overflow: scroll;
+  }
+}
+
+#recent::-webkit-scrollbar,
+#holdings::-webkit-scrollbar {
+  width: 15px;
+}
+#recent::-webkit-scrollbar-track,
+#holdings::-webkit-scrollbar-track {
+  background: #f1f1f18f;
+  border-radius: 10px;
+}
+#recent::-webkit-scrollbar-thumb,
+#holdings::-webkit-scrollbar-thumb {
+  background: #f8b7c7;
+  border-radius: 10px;
+}
+#recent::-webkit-scrollbar-thumb:hover,
+#holdings::-webkit-scrollbar-thumb:hover {
+  background: #ee97ad;
+}
+
+.recentblock {
+  height: 48px;
+  width: calc(100% - 20px);
+  margin: 21px 0px 0px 10px;
+}
+.recenticon {
+  height: 48px;
+  float: left;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 48px;
+  border-radius: 7px;
+  margin-right: 13px;
+  position: relative
+}
+.buyrecent {
+  background-color: #e2f9d8;
+  color: #30623c;
+}
+.sellrecent {
+  background-color: #f9d8e2;
+  color: #623c30;
+}
+.firsttext {
+  font-size: 15px;
+  height: 100%;
+  float: left;
+}
+.secondtext {
+  height: 100%;
+  font-size: 15px;
+  float: right;
+  color: #4f4f4f;
+  font-size: 17px;
+}
+.secondtext p,
+.firsttext p {
+  margin: 0;
+}
+.gg-swap {
+  --ggs: 2;
+}
+.tickerholding {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  height: 100%;
+  float: left;
+  color: #4f4f4f;
+  font-family: "circblack";
+}
