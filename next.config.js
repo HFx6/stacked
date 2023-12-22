@@ -1,5 +1,6 @@
-module.exports = {
-  images: {
-    domains: ['drivewealth.imgix.net', "s.yimg.com"],
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
 }
+
+module.exports = nextConfig
